@@ -42,7 +42,7 @@ BigDecimal totElapsed = 0.0G
 for(int i = 1; i < rowCount + 1; i++) {
     String numExecStr = vars.get(varPrefixNumExec + "_" + i.toString())
     String elapsedTimeStr = vars.get(varPrefixTotElapsed + "_" + i.toString())
-    log.info("Found Number Executed = $numExecStr and Elapsed Time Microseconds = $elapsedTimeStr")
+    log.info("Found Number Executed = $numExecStr and Total Elapsed Time Microseconds = $elapsedTimeStr")
     numExec += numExecStr as BigDecimal
     totElapsed += elapsedTimeStr as BigDecimal
 }
