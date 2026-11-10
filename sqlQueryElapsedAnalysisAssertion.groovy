@@ -33,7 +33,7 @@ if (rowCount == 0) {
 /* Consolidate the stats here...
  * Its possible to get multiple rows of stats for the same query.  Example: If different integer sizes are used as query parameters,
  * these may get interpreted by SQL as different integer types (tinyint, smallint, mediumint, etc.) and result in multiple
- * query plans and stats to anlyze.  Consolidate all the stats into one set and then analyze the single set of stats.
+ * query plans and stats to analyze.  Consolidate all the stats into one set and then analyze the single set of stats.
  */
 
 BigDecimal numExec = 0.0G
