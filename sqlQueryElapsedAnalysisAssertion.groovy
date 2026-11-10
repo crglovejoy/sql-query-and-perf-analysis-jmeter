@@ -43,8 +43,6 @@ for(int i = 1; i < rowCount + 1; i++) {
     String numExecStr = vars.get(varPrefixNumExec + "_" + i.toString())
     String elapsedTimeStr = vars.get(varPrefixTotElapsed + "_" + i.toString())
     log.info("Found Number Executed = $numExecStr and Elapsed Time Microseconds = $elapsedTimeStr")
-
-    // Consolidate the stats here...
     numExec += numExecStr as BigDecimal
     totElapsed += elapsedTimeStr as BigDecimal
 }
